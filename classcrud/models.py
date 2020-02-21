@@ -1,9 +1,11 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.contrib import auth
 import django_filters
 
 class ClassBlog(models.Model):
     강의명 = models.CharField(max_length=100, default='')
-    교수명 = models.CharField(max_length=100, default='')
+    교수명 = models.CharField(max_length=100, default='')    
     create_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     평가내용 = models.TextField()

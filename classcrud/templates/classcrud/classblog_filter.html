@@ -25,7 +25,7 @@
 
         {%for blog in object_list%}
             <h2>{{blog.강의명}}</h2>
-            <h2>{{blog.교수명}}</h2>
+            <h2>{{blog.교수명}}</h2>            
             <h5>{{blog.updated_at}}</h5>
             <p>{{blog.평가내용}}</p>
             <a href="{% url 'detail' blog.id %}"> 자세히보기 </a> <br>
